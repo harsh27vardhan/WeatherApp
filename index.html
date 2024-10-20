@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+    
+    <form action="" class="search-container" autocomplete="off">
+        <input type="text" id="city" placeholder="Search">
+        <button id="btn" type="submit"><span class="material-symbols-outlined">
+            search
+        </span></button>
+    </form>
+    <div class="card">
+        <div class="cont1">
+            <h3 id="location">---</h3>
+        </div>
+
+        <div class="cont2">
+            <div class="cont2-left">
+                <!-- <img src="" alt="Condition"> -->
+                <p id="condition">---</p>
+            </div>
+            <div class="cont2-right">
+                <p id="temperature">---</p>
+                <div id="var-temps">
+                    <p id="min-temp">---</p>
+                    <p id="max-temp">---</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont3">
+            <p>Visibitily : <span id="visibitily"></span></p>
+        </div>
+
+        <div class="cont4">
+            <div class="cont4-left">
+                <img id="wind-img" src="https://www.svgviewer.dev/static-svgs/416361/wind.svg" alt="Wind" height="100px">
+                <div class="wind">
+                    <p id="wind-speed">---</p>
+                    <p id="wind-deg">---</p>
+                </div>
+            </div>
+            <div class="cont4-right">
+                <div id="humidity">
+                    <img id="humidity-img" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/humidity-22-751714.png" alt="Humidity" height="80px">
+                    <p id="humidity-value">---</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont5">
+            <div class="pressure">
+                <p>Pressure : <span id="pressure">---</span></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
